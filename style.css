@@ -1,0 +1,285 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root{
+    --rose:#A6464E;
+    --pink:#F2B6D2;
+    --green: #838C3A;
+    --tan-gn: #A6995B;
+    --brown: #8C5A1C;
+
+    /* text and background colors */
+    --white: #fff;
+    --lt-gray: #eaeaea;
+    --dk-gray: #222;
+
+    --heading-fonts:'gastromond','Arial', sans-serif;
+    --body-fonts:'poppins','houschka round';
+    --box-shadow-lg: -6px 6px 10px var(--pink);
+
+}
+h1{
+    font-size: 6rem;
+    font-weight: bold;
+    margin: 0.75em  0;
+    font-family: var(--heading-fonts);
+    
+}
+body{
+    background-color: #838c3a;
+    background-image: url("https://www.transparenttextures.com/patterns/blu-stripes.png");
+    font-family: var(--body-fonts);
+    color: var(--white);
+    
+}
+header{
+    background-color: #838C3A;
+    padding: 16px;
+    margin: 0 0 16px 0;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--white);
+    border-bottom: 5px solid var(--white);
+    border-radius: 16px;
+    
+
+}
+
+nav{
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 0;
+    margin: 1em 0;
+
+}
+
+nav a{
+    display: block;
+    padding: 1rem;
+    text-decoration: underline;
+    font-weight: bold;
+    background-color: var(--rose);
+    color: var(--white);
+    border-style: dashed;
+    border-radius: 8px;
+	box-shadow: var(--box-shadow-lg);
+}
+
+/* Nav Hover Styles */
+nav a:hover{
+    color: var(--pink);
+    background-color: var(--white);
+}
+
+header, footer{
+    text-align: center;
+    background-color: var(--tan-gn);
+}
+h2{
+    font-size: 3.2rem;
+	text-align: center;
+    color: var(--white);
+    padding-top: 2.3rem;
+    
+}
+h3{
+    font-size:2rem;
+    text-align: center ;
+    color: var(--white);
+    padding-top: 1rem;
+    
+}
+
+main > section{
+	padding: 2rem 2rem 3rem 2rem;
+    background-color: var(--rose);
+    border-radius: 10px;
+    border-bottom: 5px solid var(--white);
+
+}
+#menu > a{
+    text-decoration: underline;
+    font-size: 1rem;
+    color: var(--white);
+    display: grid;
+    padding:1rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+#us{
+    padding: 2rem 2rem;
+    background-color: var(--pink);
+    font-size: 2rem;
+    gap: 2px;
+    border-radius: 10px;   
+    border-bottom: 5px solid var(--white);
+}
+#us p{
+    text-align: center;
+    font-size: .8rem;
+    padding-top: .5rem;
+
+}
+ #grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 2rem 2rem 2rem 2rem;
+    align-items: center;
+    width: 75%;
+
+}
+#grid p{
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+img{
+	display: flex;
+    flex-flow: column;
+	width: 100%;
+    
+}
+
+
+
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 3rem;
+    padding: 1rem 1rem 1rem 1rem;
+    justify-content: center;
+}
+#form{
+    margin: 0 auto;
+    font-size: 1rem;
+    gap: 1rem;
+}
+#form p{
+    text-align: center;
+    padding-bottom: 2rem;
+
+}
+#form img{
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+
+}
+#form h1{
+    text-align: center;
+   
+
+}
+input, label, select, textarea{
+    display: block;
+    width: 100%;
+    border-radius: 10px; 
+}
+label{
+    margin: 0 0 4px 16px;
+    font-weight: bold;
+    font-family: var(--body-fonts);
+    padding-top: .5rem;
+
+}
+#left #right fieldset{
+    margin-bottom: 24px;
+    border-radius: 4px;
+    border-color: var(--pink);
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 8px;
+  }
+
+input[type="radio"] + label {
+    cursor: pointer;
+}
+input:invalid, select:invalid, textarea:invalid{
+    border: 4px solid var(--pink);
+    box-shadow: -4px 4px 10px var(--pink);
+  }
+#my-submit{
+    grid-column: 1/-1;
+    margin: 1rem auto;
+    padding-bottom: 1rem;
+    font-family: var(--body-fonts);
+    
+
+}
+#my-submit:focus{
+    outline: 3px solid var(--green);
+}
+#my-submit:hover{
+    box-shadow: -3px 3px 5px var(--tan-gn);
+}
+#right legend{
+    padding-top: 1rem;
+}
+#right{
+    padding-top: 1.5rem;
+}
+footer{
+    padding:3rem;
+    color: var(--white);
+    border-top: 5px solid var(--white);
+}
